@@ -1,20 +1,25 @@
 {
   "name": "file-metadata-microservice",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server.mjs",
   "scripts": {
-    "start": "node server.js",
-    "serve-local": "PORT=2000 nodemon --inspect server"
-  },
-  "engines": {
-    "node": "14.x"
+    "start": "node server.mjs",
+    "serve-local": "PORT=2000 nodemon --inspect server",
+    "test": "node test/index.mjs"
   },
   "dependencies": {
     "express": "^4.17.2",
     "multer": "^1.4.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "supertest": "^6.3.3"
+  },
+  "volta": {
+    "node": "20.0.0"
+  },
+  "engines": {
+    "node": "20.0.0"
   }
 }
